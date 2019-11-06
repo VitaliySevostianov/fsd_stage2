@@ -1,5 +1,4 @@
 import './index.scss';
-import './Components/Textbox/Textbox.scss'
 class TestClass {
     constructor() {
         let msg = "Using ES2015+ syntax";
@@ -7,4 +6,3 @@ class TestClass {
     }
 }
 let test = new TestClass();
-console.log('API Key from Define Plugin:', API_KEY);
