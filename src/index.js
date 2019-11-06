@@ -1,5 +1,5 @@
 import './index.scss';
-
+import './Components/Textbox/Textbox.scss'
 class TestClass {
     constructor() {
         let msg = "Using ES2015+ syntax";
