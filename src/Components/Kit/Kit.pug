@@ -1,6 +1,9 @@
 include ../TextField/TextField.pug
+include ../Dropdown/Dropdown.pug
 head
     meta(charset="utf-8")
     title UI Kit    
+    link(href= "https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
 body
     +text-field('Email')(class="")
+    +dropdown('Date')

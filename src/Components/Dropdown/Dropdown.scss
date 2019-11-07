@@ -1,0 +1,14 @@
+.dropdown{
+    display: flex;
+    justify-content: space-between;
+    line-height:  129%;
+    padding-right: 15px;
+
+    color: $dark-shade_75;
+    font-family: Montserrat;
+    font-size: 14px;
+}
+.material-icons{
+    color: $dark-shade_50;
+    align-self: center;
+}
