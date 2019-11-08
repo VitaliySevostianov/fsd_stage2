@@ -1,5 +1,9 @@
 include ../TextField/TextField.pug
 include ../Dropdown/Dropdown.pug
+include ../MaskedTF/MaskedTF.pug
+include ../DateDropdown/DateDropdown.pug
+
+
 head
     meta(charset="utf-8")
     title UI Kit    
@@ -7,3 +11,5 @@ head
 body
     +text-field('Email')(class="")
     +dropdown('Date')
+    +masked-tf('ДД.ММ.ГГГГ')
+    +date-dropdown('ДД.ММ.ГГГГ')
