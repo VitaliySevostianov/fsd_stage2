@@ -1,0 +1,14 @@
+.subscription-text-field{
+    width: 266px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.purple-arrow{
+    color: $primary-color;
+    position: absolute;
+    z-index: 1000;
+    background: none;
+    border: none;
+    left: 226px;
+}
