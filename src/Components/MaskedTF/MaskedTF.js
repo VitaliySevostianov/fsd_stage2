@@ -1,26 +1,36 @@
-const dateInputMask = (elm) => {
+const dateInputMask = (el) => {
     
-    elm.addEventListener('keyup', function(e) {
+    el.addEventListener('keyup', function(e) {
     if( e.keyCode < 47 || e.keyCode > 57) {
         e.preventDefault();
     }
  
-    let len = elm.value.length;
- 
-    if(len !== 1 || len !== 3) {
-        if(e.keyCode == 47) {
-            e.preventDefault();
-        }
-    }
-    if(len === 2) {
-        if (e.keyCode !== 8 && e.keyCode !== 46) { 
-        elm.value = elm.value+'.';
-        }
-    }
- 
-    if(len === 5) {
-        if (e.keyCode !== 8 && e.keyCode !== 46) { 
-        elm.value = elm.value+'.';
+    let len = el.value.length;
+    
+    let reg = new RegExp(/^(([1-9]|[0-2]\d|[3][0-1])\.([1-9]|[0]\d|[1][0-2])\.[2][0]\d{2})$|^(([1-9]|[0-2]\d|[3][0-1])\.([1-9]|[0]\d|[1][0-2])\.[2][0]\d{2}\s([1-9]|[0-1]\d|[2][0-3])\:[0-5]\d)$/g);
+    let isValid = reg.test(e.value);
+    console.log(isValid)
+    console.log(reg)
+    if(isValid === false){
+        switch(len){
+            case !1 || !3 : {
+                if(e.keyCode == 47) {
+                    e.preventDefault();
+                }
+                break;
+            }
+            case 2 : {
+                if (e.keyCode !== 8 && e.keyCode !== 46) { 
+                    el.value += '.';
+                }
+                break;
+            }
+            case 5 : {
+                if (e.keyCode !== 8 && e.keyCode !== 46) { 
+                el.value +='.';
+                }
+                break;
+            }
         }
     }
   });
