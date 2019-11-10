@@ -5,11 +5,15 @@ $dark-shade_75: rgba(31, 32, 65, 0.75);
 $dark-shade_50: rgba(31, 32, 65, 0.50);
 $dark-shade_25: rgba(31, 32, 65, 0.25);
 $dark-shade_5: rgba(31, 32, 65, 0.5);
-
 .material-icons{
     color: $dark-shade_50;
     align-self: center;
 }
+body{
+    background: #E5E5E5;
+}
+// @import '../public/Галочка.png';
+@import './Components/Kit/Kit.scss';
 
 @import './Components/TextField/TextField.scss';
 @import './Components/Dropdown/Dropdown.scss';
@@ -17,5 +21,4 @@ $dark-shade_5: rgba(31, 32, 65, 0.5);
 @import './Components/DateDropdown/DateDropdown.scss';
 @import './Components/FilterDateDropdown/FilterDateDropdown.scss';
 @import './Components/SubscriptionTextField/SubscriptionTextField.scss';
-
-
+@import './Components/CheckboxButton/CheckboxButton.scss';

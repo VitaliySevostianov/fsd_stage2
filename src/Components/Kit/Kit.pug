@@ -4,6 +4,9 @@ include ../MaskedTF/MaskedTF.pug
 include ../DateDropdown/DateDropdown.pug
 include ../FilterDateDropdown/FilterDateDropdown.pug
 include ../SubscriptionTextField/SubscriptionTextField.pug
+include ../CheckboxButton/CheckboxButton.pug
+
+
 
 
 
@@ -11,12 +14,15 @@ head
     meta(charset="utf-8")
     title UI Kit    
     link(href= "https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
-    link(href= "../../../datepicker.material.css" rel="stylesheet")
 body
-    script(src="../../../datepicker.js")
-    +text-field('Email')(class="")
-    +dropdown('Date')
-    +masked-tf('ДД.ММ.ГГГГ')
-    +date-dropdown('ДД.ММ.ГГГГ')
-    +filter-date-dropdown('19 авг - 25 авг')
-    +subscription-text-field('Email')
+    main
+        section
+            +text-field('Email')(class="")
+            +dropdown('Date')
+            +masked-tf('ДД.ММ.ГГГГ')
+            +date-dropdown('ДД.ММ.ГГГГ')
+            +filter-date-dropdown('19 авг - 25 авг')
+            +subscription-text-field('Email')
+        section
+            +checkbox-btn('Check','1')
+            +checkbox-btn('Курение','2')
