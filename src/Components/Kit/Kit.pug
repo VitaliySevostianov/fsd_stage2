@@ -4,7 +4,11 @@ include ../MaskedTF/MaskedTF.pug
 include ../DateDropdown/DateDropdown.pug
 include ../FilterDateDropdown/FilterDateDropdown.pug
 include ../SubscriptionTextField/SubscriptionTextField.pug
+
 include ../CheckboxButton/CheckboxButton.pug
+include ../RadioButton/RadioButton.pug
+include ../ToggleButton/ToggleButton.pug
+
 
 
 
@@ -28,7 +32,9 @@ body
             +subscription-text-field('Email')
             
         section
-            +checkbox-btn('Можно курить','1')
-            +checkbox-btn('Можно с питомцами','2')
-            +checkbox-btn('Можно пригласить гостей (до 10 человек)','3')
+            +checkbox-btn('Можно курить', 1)
+            +checkbox-btn('Можно с питомцами', 2)
+            +checkbox-btn('Можно пригласить гостей (до 10 человек)', 3)
+            +radio-btn('Мужчина', 'Женщина', 1)
+            +toggle-btn
             

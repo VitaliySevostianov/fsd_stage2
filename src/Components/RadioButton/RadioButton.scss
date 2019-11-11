@@ -1,0 +1,50 @@
+.radio-buttons{
+    display: flex;
+    flex-direction: row;
+}
+.form_radio {
+	margin-right: 20px;
+}
+.form_radio input[type=radio] {
+	display: none;
+}
+.form_radio label {
+	position: relative;
+	padding-left:20px;
+    cursor: pointer;
+
+    color: $dark-shade_50;
+
+    display: block;
+    min-width: 100px;
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height:  150%;
+    box-sizing: border-box;
+    
+}
+.form_radio label:before {
+    content: ' ';   
+    // font-size: 19px; 
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    position: absolute;
+    left: -10px;
+    // top: 0;
+	width: 20px;
+    height: 20px;
+    border: 1px solid $dark-shade_25;
+	border-radius: 10px;
+	background: #FFF;
+}
+ 
+/* Checked */
+.form_radio input[type=radio]:checked + label:before {
+    border: 1px solid $primary-color;
+	content: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjEyIiBoZWlnaHQ9IjEyIiByeD0iNiIgZmlsbD0idXJsKCNwYWludDBfbGluZWFyKSIvPgo8ZGVmcz4KPGxpbmVhckdyYWRpZW50IGlkPSJwYWludDBfbGluZWFyIiB4MT0iNiIgeTE9IjAiIHgyPSI2IiB5Mj0iMTIiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPHN0b3Agc3RvcC1jb2xvcj0iI0JDOUNGRiIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM4QkE0RjkiLz4KPC9saW5lYXJHcmFkaWVudD4KPC9kZWZzPgo8L3N2Zz4K);
+}
+
+.form_radio input[type=radio]:checked + label {
+    color: $dark-shade_75;
+}
