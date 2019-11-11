@@ -29,11 +29,19 @@ module.exports = {
                     loader: "sass-loader" // compiles Sass to CSS
                 }]
             },
-
+            {
+                test: /\.svg$/,
+                loader: 'svg-sprite-loader',
+                options: {
+                    extract: true,
+                    publicPath: '/'
+                }
+            },
             {
                 test: /\.pug$/,
                 loader: 'pug-loader'
             },
+
         ]
     },
     plugins: [  // Array of plugins to apply to build chunk

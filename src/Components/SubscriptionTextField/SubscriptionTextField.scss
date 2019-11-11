@@ -5,10 +5,11 @@
 }
 
 .purple-arrow{
-    color: $primary-color;
-    position: absolute;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    position: relative;
     z-index: 1000;
     background: none;
     border: none;
-    left: 226px;
+    top: 5px;
+    left: -50px;
 }
